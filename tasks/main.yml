@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable GNU Stow via Homebrew
+  package:
+    name: stow
+    state: latest
+  when: ansible_os_family == "Darwin"
